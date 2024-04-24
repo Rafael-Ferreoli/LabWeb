@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dados Pessoais</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<body style="background-color:skyblue;"> 
+		<center>
+			<h1>Dados Pessoais</h1>
+			<img src="WEB.png" alt="Formulário" width="250" height="150">
+		</center>
+		<center><p style="font-size:150%;">Preencha com seus dados:</p></center>
+		<br/>
+		<form action="/processar.html" method="get" autocomplete="off">
+			<p>Nome: <input type="text" name=Nome" autocomplete="on" /><br/></p>
+			<p>Sobrenome: <input type="text" name=Sobrenome" autocomplete="on" /><br/></p>
+			<p>CPF: <input type="text" name=CPF" autocomplete="on" maxlength="11" placeholder="XXXXXXXXXXX" /><br/></p>
+			<p>RG: <input type="text" name=RG" autocomplete="on" maxlength="9" placeholder="XXXXXXXXX"/><br/></p>
+			<p>Data de nascimento: <input type="date" name=Nascimento" min="1900-01-01" max="2017-12-31"><br/></p>
+			<p>Sexo:<br/>
+			<br>
+			<input type="radio" name=Genero" />Masculino <br/>
+			<input type="radio" name=Genero" />Feminino <br/></p>
+			<p>Celular: <input type="text" name=Numero" autocomplete="on" maxlength="11" placeholder="(XX)XXXXXXXXX" /><br/></p>
+			<p>Email: <input type="email" name=Email" autocomplete="on" /><br/></p>
+			<p>Endereço:</p>
+			<input type="text" name=Logradouro" placeholder=CEP autocomplete="on" /><br/>
+			<input type="text" name=Logradouro" placeholder=Rua autocomplete="on" /><br/>
+			<input type="text" name=Logradouro" placeholder=Número autocomplete="on" /><br/>
+			<input type="text" name=Logradouro" placeholder=Bairro autocomplete="on" /><br/>
+			<p>Crie uma senha:</p>
+			<input type="password" name="psw"><br/>
+			<p>Confirme sua senha:</p>
+			<input type="password" name="psw"><br/>
+			<br>
+			<input type="submit" value"Enviar">
+			<input type="reset" value"Redefinir"><br/>
+		</form>
+	</body>
+</html>
+		
